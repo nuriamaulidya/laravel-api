@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Bendera Armenia, Austria, dan Finlandia</title>
+</head>
+<body>
+    <canvas id="DemoCanvas" width="800" height="300"></canvas>
+    <script>
+        var canvas = document.getElementById("DemoCanvas");
+        if (canvas.getContext) {
+            var ctx = canvas.getContext("2d");
+            
+            // Bendera Armenia
+            ctx.fillStyle = "rgb(255,0,0)";
+            ctx.fillRect(50, 50, 200, 60);
+            
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fill();
+            
+            ctx.fillStyle = "rgb(255,165,0)";
+            ctx.fillRect(50, 170, 200, 60);
+            
+            // Bendera Austria
+            ctx.beginPath();
+            ctx.rect(300, 50, 200, 60);
+            ctx.fillStyle = "rgb(255,0,0)";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.rect(300, 110, 200, 60);
+            ctx.fillStyle = "rgb(255,255,255)";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.rect(300, 170, 200, 60);
+            ctx.fillStyle = "rgb(255,0,0)";
+            ctx.fill();
+            
+            // Bendera Finlandia
+            ctx.beginPath();
+            ctx.rect(550, 50, 200, 180);
+            ctx.fillStyle = "rgb(255,255,255)";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.rect(550, 110, 200, 40);
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.rect(620, 50, 40, 180);
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fill();
+        }
+    </script>
+</body>
+</html>
